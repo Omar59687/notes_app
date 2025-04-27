@@ -12,7 +12,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(brightness: Brightness.dark),
+      theme: ThemeData(
+        brightness: Brightness.dark,
+        scaffoldBackgroundColor:
+            Colors.grey[850], // or any other color you prefer
+      ),
       home: NotesView(),
     );
   }
